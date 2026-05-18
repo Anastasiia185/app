@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Мій To-Do List на React</h1>
+      <h1>Мій To-Do List</h1>
       
       <TaskForm addTask={addTask} />
 
@@ -46,7 +46,7 @@ function App() {
 
       <hr />
       <button onClick={() => setShowBMI(!showBMI)} className="toggle-bmi-btn">
-        {showBMI ? 'Сховати калькулятор ІМТ' : 'Показати калькулятор ІМТ (Завдання 6)'}
+        {showBMI ? 'Сховати калькулятор ІМТ' : 'Показати калькулятор ІМТ'}
       </button>
       {showBMI && <BMICalculator />}
     </div>
