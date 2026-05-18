@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* TaskForm */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-btn {
+  padding: 12px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+/* TaskList */
+.task-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background: #e9ecef;
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+.empty-message {
+  text-align: center;
+  color: #6c757d;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Calculator */
+.bmi-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f1f3f5;
+  border-radius: 15px;
+}
+
+.bmi-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #495057;
+}
+
+.bmi-inputs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.bmi-inputs label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.bmi-inputs input {
+  padding: 10px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.bmi-result {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+
+.diagnosis.normal {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.toggle-bmi-btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.toggle-bmi-btn:hover {
+  background: #218838;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+}
